@@ -1,10 +1,9 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
-import './index.css'
+import Home from './pages/Home/Home'
 
 // Navbar
 // I love to fail! (About Me)
@@ -17,7 +16,7 @@ const App = () => {
         <div>
           <Switch>
             <Route exact path='/'>
-              <h1>About Me</h1>
+              <Home />
             </Route>
             <Route path='/projects'>
               <h1>Projects</h1>
