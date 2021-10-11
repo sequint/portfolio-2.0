@@ -5,7 +5,7 @@ import logo from './portfolio-logo.png'
 
 const NavBar = () => {
   return(
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="transparent" expand="lg">
       <Container>
         <Navbar.Brand>
           <img
@@ -22,7 +22,7 @@ const NavBar = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Philosophy</Nav.Link>
             <Nav.Link href="#link">Projects</Nav.Link>
-            <Nav.Link href="#link">Skills/Toolbealt</Nav.Link>
+            <Nav.Link href="#link">Toolbealt</Nav.Link>
             <Nav.Link href="#link">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
