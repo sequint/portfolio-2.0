@@ -1,4 +1,5 @@
 import NavBar from '../../components/NavBar/NavBar'
+import AboutMe from '../../components/AboutMe/AboutMe'
 import './Home.css'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <div className="nav-bio-container">
         <NavBar />
+        <AboutMe />
       </div>
     </>
   )
