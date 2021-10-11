@@ -1,9 +1,12 @@
 import NavBar from '../../components/NavBar/NavBar'
+import './Home.css'
 
 const Home = () => {
   return(
     <>
-      <NavBar />
+      <div className="nav-bio-container">
+        <NavBar />
+      </div>
     </>
   )
 }
