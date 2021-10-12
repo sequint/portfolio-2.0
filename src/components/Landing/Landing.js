@@ -9,6 +9,7 @@ const Landing = () => {
         className="landing-logo"
         alt="Steven Quintana logo"
       />
+      <h1 className="landing-title">Steven Quintana</h1>
     </div>
   )
 }

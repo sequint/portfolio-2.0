@@ -2,13 +2,19 @@
   height: 1000px;
   width: 100%;
   background-color: #06D6A0;
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
 .landing-logo {
   display: block;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   margin: auto;
 }
 
+.landing-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
