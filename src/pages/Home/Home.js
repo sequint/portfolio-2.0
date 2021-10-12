@@ -1,3 +1,4 @@
+import Landing from '../../components/Landing/Landing'
 import NavBar from '../../components/NavBar/NavBar'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import './Home.css'
@@ -5,10 +6,9 @@ import './Home.css'
 const Home = () => {
   return(
     <>
-      <div className="nav-bio-container">
-        <NavBar />
-        <AboutMe />
-      </div>
+      <Landing />
+      <NavBar />
+      <AboutMe />
     </>
   )
 }
