@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import headshot from '../../images/headshot.jpeg'
+import backsplash from '../../images/backSplash.png'
+import bigLogo from '../../images/bigLogo.png'
 import './AboutMe.css'
 
 const AboutMe = () => {
@@ -31,7 +33,10 @@ const AboutMe = () => {
                   </svg>
                 </div>
           </Col>
-          <Col>2 of 2</Col>
+          <Col>
+            <h2 className="about-me-title">About Me</h2>
+            <p className="about-me-text">Hi, I'm Steven Quintana.  I am a recent graduate of UC Irvine's Full Stack Development Bootcamp.  </p>
+          </Col>
         </Row>
       </Container>
     </>
