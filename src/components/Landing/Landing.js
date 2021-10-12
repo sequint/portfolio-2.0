@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logo from '../../images/portfolio-logo.png'
 import './Landing.css'
 
@@ -19,8 +19,20 @@ const Landing = () => {
     titleIndex: 0
   })
 
+  useEffect(() => {
+    let currentIndex = indexState.titleIndex
+    setInterval(() => {
+      currentIndex === 6 ? setIndexState({ titleIndex: 0 }) : setIndexState({ titleIndex: currentIndex + 1 })
+    }, 3000)
+  })
+
   // Set next title variable equal to the titles array at the state index.
-  let nextTitle = titles[indexState.titleIndex]
+  let nextTitle = ''
+  nextTitle = titles[indexState.titleIndex]
+
+  const displayNextTitle = _ => {
+    return titles[index]
+  }
 
   return(
     <div className="landing-container">
