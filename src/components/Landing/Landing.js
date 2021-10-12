@@ -15,14 +15,12 @@ const titles = [
 
 const Landing = () => {
   // Set state for the title.
-  const [ titleIndexState, setTitleIndexState ] = useState({
+  const [ indexState, setIndexState ] = useState({
     titleIndex: 0
   })
 
-  // Set next title equal to the titles array at the state index.
-  const nexTitle = _ => {
-
-  }
+  // Set next title variable equal to the titles array at the state index.
+  let nextTitle = titles[indexState.titleIndex]
 
   return(
     <div className="landing-container">
@@ -31,7 +29,7 @@ const Landing = () => {
         className="landing-logo"
         alt="Steven Quintana logo"
       />
-      <h1 className="landing-title">Steven Quintana</h1>
+      <h1 className="landing-title">{nextTitle}</h1>
     </div>
   )
 }
