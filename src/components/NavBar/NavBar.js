@@ -2,10 +2,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import logo from '../../images/portfolio-logo.png'
+import './NavBar.css'
 
 const NavBar = () => {
   return(
-    <Navbar bg="transparent" expand="lg">
+    <Navbar className="navbar-container"expand="lg">
       <Container>
         <Navbar.Brand>
           <img
