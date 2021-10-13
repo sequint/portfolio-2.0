@@ -18,11 +18,17 @@ const Landing = () => {
   useEffect(() => {
     setTimeout(() => {
       setIndex(index < titles.length - 1 ? index + 1 : 0)
-    }, 5000)
+    }, 3000)
   }, [index])
 
   return(
-    <div className="landing-container">
+    <div className="landingContainer">
+      <img
+        src={logo}
+        alt="site logo"
+        className="bigLogo"
+        position="center"
+      />
       {titles[index]}
     </div>
   )

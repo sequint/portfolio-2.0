@@ -1,9 +1,21 @@
+.landingContainer {
+  background-color: #06D6A0;
+  width: 100%;
+}
+
+.bigLogo {
+  padding-top: 150px;
+  height: 250px;
+  display: block;
+  margin: auto !important;
+}
+
 .landing-title {
   font-size: 50px;
   font-weight: bold;
-  color: #06D6A0;
+  color: white;
   text-align: center;
-  padding: 100px 10px 20px 10px;
+  padding: 50px 10px 200px 10px;
 }
 
 @keyframes fadeIn {
