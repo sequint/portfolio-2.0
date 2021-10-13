@@ -18,7 +18,7 @@ const Landing = () => {
   useEffect(() => {
     setTimeout(() => {
       setIndex(index < titles.length - 1 ? index + 1 : 0)
-    }, 3000)
+    }, 5000)
   }, [index])
 
   return(
