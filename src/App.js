@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import './App.css'
 
 // Navbar
 // I love to fail! (About Me)
