@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
+import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -11,7 +12,7 @@ const NavBar = () => {
    <>
      <Box sx={{ flexGrow: 1 }}>
        <AppBar position="static">
-         <Toolbar>
+         <Toolbar className="navBgColor">
            <IconButton
              size="large"
              edge="start"
@@ -20,8 +21,12 @@ const NavBar = () => {
            >
              <MenuIcon />
            </IconButton>
-           <Typography className="navTitle" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-             News
+           <Typography className="navTitle" variant="h6" component="div" sx={{ flexGrow: .9 }}>
+             <img 
+              src={logo}
+              alt="Site logo"
+              className="logo"
+             />
            </Typography>
          </Toolbar>
        </AppBar>
