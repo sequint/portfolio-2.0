@@ -12,7 +12,6 @@ import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -30,7 +29,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
-const drawerWidth = 360;
+const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
@@ -74,8 +73,7 @@ const NavBar = () => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar className="navBgColor" position="fixed" open={open}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -87,7 +85,11 @@ const NavBar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Persistent drawer
+            <img 
+              src={logo}
+              alt="Site logo"
+              className="logo"
+            />
           </Typography>
         </Toolbar>
       </AppBar>
@@ -103,6 +105,7 @@ const NavBar = () => {
         variant="persistent"
         anchor="left"
         open={open}
+        className="navBgColor"
       >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -112,17 +115,6 @@ const NavBar = () => {
         <Divider />
         <List>
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

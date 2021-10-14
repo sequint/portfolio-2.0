@@ -1,9 +1,13 @@
-.navBgColor {
-  background-color: #06D6A0;
+.css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+  background-color: #06D6A0 !important;
 }
 
-.navTitle {
-  text-align: center;
+.css-jzk4qw-MuiPaper-root-MuiAppBar-root {
+  background-color: #06D6A0 !important;
+}
+
+.css-8u39c-MuiTypography-root {
+  margin: auto !important;
 }
 
 .logo {
