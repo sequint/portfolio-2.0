@@ -15,3 +15,8 @@
   width: 50px;
   padding-top: 10px;
 }
+
+.menuItem {
+  text-decoration: none !important;
+  color: #05668D;
+}

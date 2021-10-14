@@ -1,14 +1,5 @@
-// import { useState } from 'react'
-// import Menu from '../Menu/Menu'
-// import SideMenu from '../SideMenu/SideMenu'
-// import AppBar from '@mui/material/AppBar'
-// import Box from '@mui/material/Box'
-// import Toolbar from '@mui/material/Toolbar'
-// import Typography from '@mui/material/Typography'
-// import IconButton from '@mui/material/IconButton'
-// import MenuIcon from '@mui/icons-material/Menu'
-// import useMediaQuery from '@mui/material/useMediaQuery';
-import * as React from 'react';
+import * as React from 'react'
+import { Link } from 'react-router-dom'
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -24,8 +15,10 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import CodeIcon from '@mui/icons-material/Code';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
+import EmailIcon from '@mui/icons-material/Email';
 import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
@@ -64,12 +57,29 @@ const NavBar = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+    setOpen(true)
+  }
 
   const handleDrawerClose = () => {
-    setOpen(false);
-  };
+    setOpen(false)
+  }
+
+  const displayIcon = index => {
+
+    switch (index) {
+      case 0:
+        return <HomeIcon className="menuItem" />
+      case 1:
+        return <CodeIcon className="menuItem" />
+      case 2:
+        return <ArchitectureIcon className="menuItem" />
+      case 3:
+        return <EmailIcon className="menuItem" />
+      default:
+        return <></>
+    }
+
+  }
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -114,12 +124,14 @@ const NavBar = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Home', 'Project', 'Toolbelt', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {displayIcon(index)}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <Link className="menuItem" to="/">
+                <ListItemText primary={text} />
+              </Link>
             </ListItem>
           ))}
         </List>
