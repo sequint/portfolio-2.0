@@ -23,7 +23,7 @@ const App = () => {
             <Route path='/projects'>
               <h1>Projects</h1>
             </Route>
-            <Route path='/skills'>
+            <Route path='/toolbelt'>
               <h1>Skills</h1>
             </Route>
             <Route path='/resume'>

@@ -81,6 +81,23 @@ const NavBar = () => {
 
   }
 
+  const defineRoute = index => {
+
+    switch (index) {
+      case 0:
+        return '/'
+      case 1:
+        return '/projects'
+      case 2:
+        return '/toolbelt'
+      case 3:
+        return '/resume'
+      default:
+        return <></>
+    }
+
+  }
+
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar className="navBgColor" position="fixed" open={open}>
@@ -124,12 +141,12 @@ const NavBar = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Home', 'Project', 'Toolbelt', 'Contact'].map((text, index) => (
+          {['Home', 'Projects', 'Toolbelt', 'Resume'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {displayIcon(index)}
               </ListItemIcon>
-              <Link className="menuItem" to="/">
+              <Link className="menuItem" to={defineRoute(index)}>
                 <ListItemText primary={text} />
               </Link>
             </ListItem>
