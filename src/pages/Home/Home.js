@@ -1,11 +1,13 @@
 import NavBar from '../../components/NavBar/NavBar'
-import Landing from '../../components/Landing/Landing'
+import AboutMe from '../../components/AboutMe/AboutMe'
+// import Landing from '../../components/Landing/Landing'
 
 const Home = () => {
   return(
     <>
       <NavBar />
-      <Landing />
+      <AboutMe />
+      {/* <Landing /> */}
     </>
   )
 }
