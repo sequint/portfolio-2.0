@@ -6,15 +6,23 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
+import useMediaQuery from '@mui/material/useMediaQuery';
 import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
 const NavBar = () => {
   const [ menuToggle, setMenuToggle ] = useState(false)
 
-  const handleMenuClick = _ => {
-    setMenuToggle(!menuToggle)
-    console.log(menuToggle)
+  const handleMenuClick = _ => setMenuToggle(!menuToggle)
+
+  const matches = useMediaQuery('(min-width:600px)')
+
+  const displayMenu = _ => {
+
+    if (!matches) {
+      return <Menu />
+    }
+
   }
 
  return(
@@ -41,7 +49,7 @@ const NavBar = () => {
          </Toolbar>
        </AppBar>
      </Box>
-     {menuToggle ? <Menu /> : <></>}
+     {menuToggle ? displayMenu() : <></>}
    </>
  ) 
 }
