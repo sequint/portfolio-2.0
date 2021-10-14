@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import Menu from '../Menu/Menu'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -8,6 +10,13 @@ import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
 const NavBar = () => {
+  const [ menuToggle, setMenuToggle ] = useState(false)
+
+  const handleMenuClick = _ => {
+    setMenuToggle(!menuToggle)
+    console.log(menuToggle)
+  }
+
  return(
    <>
      <Box sx={{ flexGrow: 1 }}>
@@ -18,8 +27,9 @@ const NavBar = () => {
              edge="start"
              color="inherit"
              aria-label="menu"
+             onClick={handleMenuClick}
            >
-             <MenuIcon />
+             <MenuIcon  fontSize="large"/>
            </IconButton>
            <Typography className="navTitle" variant="h6" component="div" sx={{ flexGrow: .9 }}>
              <img 
@@ -31,6 +41,7 @@ const NavBar = () => {
          </Toolbar>
        </AppBar>
      </Box>
+     {menuToggle ? <Menu /> : <></>}
    </>
  ) 
 }
