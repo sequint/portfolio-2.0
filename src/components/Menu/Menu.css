@@ -1,5 +1,10 @@
 .menuContainer {
-  margin-top: 70px !important;
+  margin-top: 69px !important;
   position: fixed;
   z-index: 1;
+}
+
+.menuItem {
+  text-decoration: none !important;
+  color: #05668D;
 }
