@@ -1,9 +1,15 @@
-/* .css-mhc70k-MuiGrid-root {
-  margin: 100px 10px 0px 10px !important;
-} */
+* {
+  margin: 0px;
+}
 
-.css-1b3jei1-MuiPaper-root {
+.aboutMeContainer {
+  background-color: azure;
+  margin: 0px;
+}
+
+.css-h0c0ys-MuiPaper-root {
   box-shadow: none !important;
+  background-color: azure !important;
 }
 
 .headshot {
@@ -22,10 +28,12 @@
 
 .aboutMeTitle {
   font-size: 40px;
+  margin-top: 30px;
 }
 
 .aboutMeText {
   font-size: 18px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 570px) {
@@ -34,7 +42,7 @@
   }
   .headshot, .aboutMeArea {
     margin-top: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .headshot {
     margin-left: auto;

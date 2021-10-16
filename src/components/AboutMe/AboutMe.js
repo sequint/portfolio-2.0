@@ -14,7 +14,7 @@ const aboutMeText = 'Full Stack Engineer leveraging 7 years of experience within
 
 const AboutMe = () => {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box className="aboutMeContainer" sx={{ width: '100%' }}>
       <Grid
         container
         direction="row"
