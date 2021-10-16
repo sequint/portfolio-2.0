@@ -1,0 +1,13 @@
+.css-mhc70k-MuiGrid-root {
+  margin: 100px 10px 0px 10px !important;
+}
+
+.headshot {
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px #06D6A0;
+}
+
+.aboutMeText {
+  max-width: 300px !important;
+}
