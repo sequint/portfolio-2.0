@@ -18,7 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
-import EmailIcon from '@mui/icons-material/Email';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
@@ -74,7 +74,7 @@ const NavBar = () => {
       case 2:
         return <ArchitectureIcon className="menuItem" />
       case 3:
-        return <EmailIcon className="menuItem" />
+        return <AttachFileIcon className="menuItem" />
       default:
         return <></>
     }
