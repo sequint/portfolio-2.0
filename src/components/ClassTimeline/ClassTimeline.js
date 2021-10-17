@@ -8,31 +8,34 @@ import './ClassTimeline.css'
 
 const ClassTimeline = () => {
   return(
-    <Timeline>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>2021</TimelineContent>
-        <TimelineContent>Full Stack Bootcamp</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>2020</TimelineContent>
-        <TimelineContent>Data Structures</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>2013</TimelineContent>
-        <TimelineContent>Intro to C++</TimelineContent>
-      </TimelineItem>
-    </Timeline>
+    <>
+      <h1 className="timelineTitle">Classes</h1>
+      <Timeline>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>2021</TimelineContent>
+          <TimelineContent>Full Stack Bootcamp</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>2020</TimelineContent>
+          <TimelineContent>Data Structures</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>2013</TimelineContent>
+          <TimelineContent>Intro to C++</TimelineContent>
+        </TimelineItem>
+      </Timeline>
+    </>
   )
 }
 
