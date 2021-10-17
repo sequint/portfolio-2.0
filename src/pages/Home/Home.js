@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar/NavBar'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import ClassTimeline from '../../components/ClassTimeline/ClassTimeline'
+import ContactMe from '../../components/ContactMe/ContactMe'
 // import Approach from '../../components/Approach/Approach'
 // import problemSolvingImg from '../../images/problem-solving.jpeg'
 // import Landing from '../../components/Landing/Landing'
@@ -29,6 +30,7 @@ const Home = () => {
       <NavBar />
       <AboutMe />
       <ClassTimeline />
+      <ContactMe />
       {/* {approaches.map(approach => <Approach approach={approach}/>)} */}
       {/* <Landing /> */}
     </>
