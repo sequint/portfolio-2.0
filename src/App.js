@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
+import Skills from './pages/Skills/Skills'
 import './App.css'
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
               <Projects />
             </Route>
             <Route path='/toolbelt'>
-              <h1>Skills</h1>
+              <Skills />
             </Route>
             <Route path='/resume'>
               <h1>Resume</h1>
