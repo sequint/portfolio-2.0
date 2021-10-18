@@ -154,53 +154,7 @@ const NavBar = () => {
         </List>
       </Drawer>
     </Box>
-  );
-
-
-//   const [ menuToggle, setMenuToggle ] = useState(false)
-
-//   const handleMenuClick = _ => setMenuToggle(!menuToggle)
-
-//   const matches = useMediaQuery('(min-width:600px)')
-
-//   const displayMenu = _ => {
-
-//     if (!matches) {
-//       return <Menu />
-//     }
-//     else {
-//       return <SideMenu />
-//     }
-
-//   }
-
-//  return(
-//    <>
-//      <Box sx={{ flexGrow: 1 }}>
-//        <AppBar position="fixed">
-//          <Toolbar className="navBgColor">
-//            <IconButton
-//              size="large"
-//              edge="start"
-//              color="inherit"
-//              aria-label="menu"
-//              onClick={handleMenuClick}
-//            >
-//              <MenuIcon  fontSize="large"/>
-//            </IconButton>
-//            <Typography className="navTitle" variant="h6" component="div" sx={{ flexGrow: .9 }}>
-//              <img 
-//               src={logo}
-//               alt="Site logo"
-//               className="logo"
-//              />
-//            </Typography>
-//          </Toolbar>
-//        </AppBar>
-//      </Box>
-//      {menuToggle ? displayMenu() : <></>}
-//    </>
-//  ) 
+  )
 }
 
 export default NavBar
