@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import Projects from './pages/Projects/Projects'
 
 // Navbar
 // I love to fail! (About Me)
@@ -20,7 +21,7 @@ const App = () => {
               <Home />
             </Route>
             <Route path='/projects'>
-              <h1>Projects</h1>
+              <Projects />
             </Route>
             <Route path='/toolbelt'>
               <h1>Skills</h1>
