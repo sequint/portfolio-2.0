@@ -1,6 +1,7 @@
 .css-a8igs1-MuiButtonBase-root-MuiFab-root {
   color: white !important;
   background-color: #05668D !important;
+  float: right;
 }
 
 .MuiTextField-root {
@@ -21,4 +22,13 @@
   margin-right: 40px !important;
   position: sticky;
   bottom: 75px;
+}
+
+@media screen and (min-width: 570px) {
+  .messageInput {
+    max-width: 320px;
+    float: right;
+    margin-right: 0px !important;
+    bottom: 70px;
+  }
 }
