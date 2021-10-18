@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
@@ -8,6 +7,7 @@ import LanguageIcon from '@mui/icons-material/Language'
 import pubImg from '../../images/project-screenshots/PUB-icon.png'
 import sessionImg from '../../images/project-screenshots/session-icon.png'
 import binaryTreeImg from '../../images/project-screenshots/binary-tree-icon.png'
+import './ProjectList.css'
 
 const projects = [
   {
@@ -62,11 +62,11 @@ const ProjectList = () => {
                   sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                   aria-label={`info about ${project.title}`}
                 >
-                  <a href={project.deployedSite} target="_blank">
-                    <LanguageIcon />
+                  <a className="noDecor" href={project.deployedSite} target="_blank">
+                    <LanguageIcon sx={{ fill: 'white' }}/>
                   </a>
-                  <a href={project.gitHubLink} target="_blank">
-                    <GitHubIcon />
+                  <a className="noDecor" href={project.gitHubLink} target="_blank">
+                    <GitHubIcon sx={{ fill: 'white' }} />
                   </a>
                 </IconButton>
               }
