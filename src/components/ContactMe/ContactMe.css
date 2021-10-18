@@ -7,9 +7,15 @@
   width: 300px;
 }
 
+.contactMeTitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 0px 20px 0px;
+}
+
 .messageInput {
   background-color: white;
-  border: black solid 1px;
+  border: rgb(201, 201, 201) solid 1px;
   border-radius: 10px;
   margin-left: 10px !important;
   margin-right: 40px !important;

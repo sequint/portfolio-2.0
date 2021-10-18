@@ -26,6 +26,7 @@ const ContactMe = () => {
           autoComplete="off"
           className="messageInput"
         >
+          <h3 className="contactMeTitle">Let's Connect!</h3>
           <div>
             <TextField
               id="outlined-email"
