@@ -6,11 +6,8 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
+import './App.css'
 
-// Navbar
-// I love to fail! (About Me)
-// Coding Philosophy - comment first
-// How I solve prob
 const App = () => {
   return (
     <>
