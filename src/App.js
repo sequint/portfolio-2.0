@@ -7,11 +7,12 @@ import {
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
 import Skills from './pages/Skills/Skills'
+import Resume from './pages/Resume/Resume'
 import './App.css'
 
 const App = () => {
   return (
-    <>
+    <div className="appContainer">
       <Router>
         <div>
           <Switch>
@@ -25,12 +26,12 @@ const App = () => {
               <Skills />
             </Route>
             <Route path='/resume'>
-              <h1>Resume</h1>
+              <Resume />
             </Route>
           </Switch>
         </div>
       </Router>
-    </>
+    </div>
   )
 }
 
