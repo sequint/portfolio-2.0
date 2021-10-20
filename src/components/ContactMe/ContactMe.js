@@ -20,7 +20,7 @@ const ContactMe = () => {
         <Box
           component="form"
           sx={{
-            '& .MuiTextField-root': { m: 1},
+            '& .MuiTextField-root': { m: 1}
           }}
           noValidate
           autoComplete="off"
@@ -47,7 +47,7 @@ const ContactMe = () => {
 
   return(
     <>
-      <Box sx={{ position: 'sticky', bottom: 0, float: 'right', padding: '0px 10px 10px 0px', transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <Box sx={{ position: 'fixed', width: '100%', bottom: 0, float: 'right', padding: '0px 10px 10px 0px', transform: 'translateZ(0px)', flexGrow: 1 }}>
         <Fab className="contactBtnColor" aria-label="add" onClick={handleClick}>
           <InsertComment />
         </Fab>
