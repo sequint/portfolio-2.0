@@ -19,6 +19,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import ResumeButton from '../ResumeButton/ResumeButton'
 import logo from '../../images/portfolio-logo.png'
 import './NavBar.css'
 
@@ -118,6 +119,7 @@ const NavBar = () => {
               className="logo"
             />
           </Typography>
+          <ResumeButton />
         </Toolbar>
       </AppBar>
       <Drawer
