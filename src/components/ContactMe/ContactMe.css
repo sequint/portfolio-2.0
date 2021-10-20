@@ -21,13 +21,14 @@
   margin-left: 10px !important;
   margin-right: 40px !important;
   position: sticky;
+  bottom: 75px;
 }
 
 @media screen and (min-width: 570px) {
   .messageInput {
     max-width: 320px;
     float: right;
-    margin-right: 0px !important;
-    bottom: 0px;
+    margin-right: 40px !important;
+    bottom: 70px;
   }
 }
