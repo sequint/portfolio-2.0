@@ -1,0 +1,9 @@
+.resumePageContainer {
+  height: 100% !important;
+}
+
+.resumePDF {
+  min-height: 100vh !important;
+  min-width: 100vw !important;
+  margin-top: 70px !important;
+}
