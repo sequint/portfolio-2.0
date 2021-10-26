@@ -1,3 +1,14 @@
 .noDecor {
   text-decoration: none !important;
 }
+
+.linkIcon:hover {
+  cursor: pointer !important;
+}
+
+.imgListContainer {
+  height: 300px !important;
+  width: 900px !important;
+  margin: auto !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
