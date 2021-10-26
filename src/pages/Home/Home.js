@@ -13,7 +13,6 @@ const Home = () => {
       <NavBar />
       <AboutMe />
       <ClassTimeline />
-      <PageTitle title="Toolbelt" />
       <SkillList />
       <PageTitle title="Projects" />
       <ProjectList />
