@@ -155,6 +155,11 @@ const skills = [
   }
 ]
 
+const skillsDescription = {
+  title: 'Toolbelt',
+  description: `Over the past few years I have been able to learn programming in multiple languages. What I've learned is that programming is much more about how you approach a problem than the tech you know. I view my knowledge of tech more as a toolbelt now, deciding which languages or frameworks are best for the problem at hand. Highlighted here are some tools used in the MERN Stack, which has been a favorite of mine recently for web development.`
+}
+
 const SkillList = () => {
   return(
     <div className="skillsContainer">
@@ -165,20 +170,39 @@ const SkillList = () => {
           justifyContent="space-evenly"
           alignItems="center"
           rowSpacing={2}
-          columnSpacing={0}
+          columnSpacing={{ xs: 1, sm: 30 }}
         >
-          {skills.map(skill => {
-            return(
-              <Grid item xs={4} sm={3}>
-                <Item className="skillItem skillIcon">
-                  {skill.icon}
-                </Item>
-                <Item className="skillItem">
-                  {skill.name}
-                </Item>
+          <Grid item xs={12} sm={6}>
+            <Item className="skillsDescriptionArea">
+              <h1 className="skillsTitle">{skillsDescription.title}</h1>
+              <p className="skillsText">{skillsDescription.description}</p>
+            </Item>
+          </Grid>
+          <Grid item className="iconsContPadding" xs={12} sm={6}>
+            <Box sx={{ width: '100%' }}>
+              <Grid
+                container
+                direction="row"
+                justifyContent="space-evenly"
+                alignItems="center"
+                rowSpacing={2}
+                columnSpacing={0}
+              >
+                {skills.map(skill => {
+                  return (
+                    <Grid item xs={4} sm={3}>
+                      <Item className="skillItem skillIcon">
+                        {skill.icon}
+                      </Item>
+                      <Item className="skillItem">
+                        {skill.name}
+                      </Item>
+                    </Grid>
+                  )
+                })}
               </Grid>
-            )
-          })}
+            </Box>
+          </Grid>
         </Grid>
       </Box>
     </div>

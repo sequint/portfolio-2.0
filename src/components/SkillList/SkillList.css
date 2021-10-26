@@ -14,6 +14,34 @@
 
 .skillsContainer {
   background-color: #FFD166 !important;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.skillsDescriptionArea {
+  background-color: #FFD166 !important;
+  text-align: center;
+}
+
+.skillsTitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.skillsText {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 570px) {
+  .skillsText {
+    margin-left: 105px;
+    margin-right: 0px;
+  }
+  .iconsContPadding {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
 }
