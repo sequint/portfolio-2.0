@@ -27,8 +27,8 @@ const classes = [
 
 const ClassTimeline = () => {
   return(
-    <>
-      <h1 className="timelineTitle">Classes</h1>
+    <div className="classesContainer">
+      <h1 className="timelineTitle">Programming Courses</h1>
       <Timeline>
         {classes.map(oneClass => {
           return(
@@ -47,7 +47,7 @@ const ClassTimeline = () => {
           )
         })}
       </Timeline>
-    </>
+    </div>
   )
 }
 
