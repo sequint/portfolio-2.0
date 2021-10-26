@@ -59,14 +59,16 @@
   .aboutMeArea {
     max-width: 600px !important;
   }
-  .headshot, .aboutMeArea {
+  .aboutMeArea {
     margin-top: 200px;
   }
   .headshot {
+    height: 350px;
+    margin-top: 300px;
     margin-left: auto;
     margin-right: 0px;
   }
   .siteLinksContainer {
-    margin-left: 260px !important;
+    margin-left: 240px !important;
   }
 }
