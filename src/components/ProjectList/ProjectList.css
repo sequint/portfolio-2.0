@@ -1,3 +1,14 @@
+.projectContainer {
+  padding-bottom: 200px;
+}
+
+.projectsTitle {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .noDecor {
   text-decoration: none !important;
 }

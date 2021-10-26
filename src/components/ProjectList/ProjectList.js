@@ -142,9 +142,10 @@ const ProjectList = () => {
   }
 
   return(
-    <>
+    <div className="projectContainer">
+      <h1 className="projectsTitle">Project Highlights</h1>
       {renderDynamicList()}
-    </>
+    </div>
   )
 }
 
