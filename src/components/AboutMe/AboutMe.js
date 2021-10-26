@@ -14,6 +14,16 @@ const aboutMeText = `Hi, my name is Steven.  I have been coding since 2013 when 
 
 const aboutMeContinued = `Prior to diving into Software Development full time I was in the finance industry where I saw an immediate need to re-invent the way we approach business with technology.  My passion lies in making outdated process new, clean, and effeciant with modern tools and technologies.`
 
+const handleGitHubClick = event => {
+  event.preventDefault()
+  window.location = 'https://github.com/sequint'
+}
+
+const handleLinkedInClick = event => {
+  event.preventDefault()
+  window.location = 'https://www.linkedin.com/in/steven-quintana-278b0091/'
+}
+
 const AboutMe = () => {
   return (
     <Box className="aboutMeContainer" sx={{ width: '100%' }}>
@@ -37,7 +47,7 @@ const AboutMe = () => {
               columnSpacing={2}
               className="siteLinksContainer"
             >
-            <Grid item xs={6}>
+            <Grid item xs={6} onClick={handleGitHubClick}>
               <Item>
                 <svg
                 viewBox="0 0 1024 1024"
@@ -50,7 +60,7 @@ const AboutMe = () => {
                 </svg>
               </Item>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} onClick={handleLinkedInClick}>
               <Item>
                               <svg
                 viewBox="0 0 1024 1024"

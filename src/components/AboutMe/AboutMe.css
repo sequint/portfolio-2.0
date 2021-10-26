@@ -29,14 +29,24 @@
 .githubIcon {
   display: block !important;
   margin: 20px 0px 0px auto !important;
-  fill: #118AB2 !important;
+  fill: #118AB2;
   height: 50px;
+}
+
+.githubIcon:hover {
+  cursor: pointer;
+  fill: #FFD166;
 }
 
 .linkedinIcon {
   display: block !important;
   margin: 20px auto 0px 0px !important;
-  fill: #118AB2 !important;
+  fill: #118AB2;
+}
+
+.linkedinIcon:hover {
+  cursor: pointer;
+  fill: #FFD166;
 }
 
 .aboutMeArea {
