@@ -5,4 +5,15 @@
 
 .skillIcon {
   margin-top: 30px !important;
+  color: #118AB2 !important;
+}
+
+.skillItem {
+  color: #118AB2 !important;
+}
+
+.skillsContainer {
+  background-color: #FFD166 !important;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }

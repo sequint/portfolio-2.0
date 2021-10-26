@@ -13,10 +13,10 @@ const Home = () => {
       <NavBar />
       <AboutMe />
       <ClassTimeline />
-      <PageTitle title="Projects" />
-      <ProjectList />
       <PageTitle title="Toolbelt" />
       <SkillList />
+      <PageTitle title="Projects" />
+      <ProjectList />
       <ContactMe />
       {/* <Landing /> */}
     </>

@@ -157,7 +157,7 @@ const skills = [
 
 const SkillList = () => {
   return(
-    <>
+    <div className="skillsContainer">
       <Box sx={{ width: '100%' }}>
         <Grid
           container
@@ -181,7 +181,7 @@ const SkillList = () => {
           })}
         </Grid>
       </Box>
-    </>
+    </div>
   )
 }
 
