@@ -7,10 +7,23 @@ import './ContactMe.css'
 
 const ContactMe = () => {
   const [ click, toggleClick ] = useState(false)
+  const [ connectInfo, setConnectInfo ] = useState({
+    email: '',
+    message: ''
+  })
 
   const handleClick = event => {
     event.preventDefault()
     toggleClick(!click)
+  }
+
+  const handleInputChange = ({ target: { name, value } }) => setConnectInfo({ ...connectInfo, [name]: value})
+
+  const handleSubmit = event => {
+    event.preventDefault()
+
+
+
   }
 
   const displayInputArea = () => {
@@ -31,10 +44,15 @@ const ContactMe = () => {
             <TextField
               id="outlined-email"
               label="Email"
+              name="email"
+              value={connectInfo.email}
+              onChange={handleInputChange}
             />
             <TextField
               id="outlined-multiline-static"
               label="Message"
+              name="message"
+              onChange={handleInputChange}
               multiline
               rows={4}
             />
