@@ -38,6 +38,7 @@ const ContactMe = () => {
               multiline
               rows={4}
             />
+            <button className="submitBtn">Submit</button>
           </div>
         </Box>
       </>

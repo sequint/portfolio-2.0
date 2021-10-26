@@ -24,6 +24,27 @@
   bottom: 75px;
 }
 
+.submitBtn {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border: #118AB2 solid 2px;
+  background-color: #118AB2;
+  border-radius: 10px;
+  height: 45px;
+  width: 100px;
+  font-size: 18px;
+  padding: 5px 5px 5px 5px;
+  margin:5px auto 5px auto;
+}
+
+.submitBtn:hover {
+  background-color: #FFD166;
+  border: #FFD166 solid 2px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 570px) {
   .messageInput {
     max-width: 320px;
