@@ -1,0 +1,17 @@
+.allSkillsContainer {
+  min-height: 100vh !important;
+}
+
+.allSkillItem {
+  font-size: 20px !important;
+  text-align: center;
+  background-color: transparent !important;
+  color: #118AB2 !important;
+  box-shadow: none !important;
+}
+
+.allSkillIcon {
+  margin-top: 30px !important;
+  color: #118AB2 !important;
+  box-shadow: none !important;
+}
