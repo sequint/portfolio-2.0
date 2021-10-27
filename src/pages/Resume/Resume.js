@@ -5,10 +5,10 @@ import './Resume.css'
 const Resume = () => {
   return(
     <>
-      <NavBar />
-      <div>
-        <embed src={resume} className="resumePDF" width="100%" height="100%" title="resume"></embed>
-      </div>
+      {/* <NavBar /> */}
+
+        <embed src={resume} className="resumePDF" type="application/pdf" width="100%" height="100%" title="resume"></embed>
+
     </>
   )
 }
