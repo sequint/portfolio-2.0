@@ -7,15 +7,23 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LanguageIcon from '@mui/icons-material/Language'
 import pubImg from '../../images/project-screenshots/PUB-icon.png'
 import sessionImg from '../../images/project-screenshots/session-icon.png'
-import binaryTreeImg from '../../images/project-screenshots/binary-tree-icon.png'
+import joferImg from '../../images/project-screenshots/JOFER.png'
 import './ProjectList.css'
 
 const projects = [
   {
+    img: joferImg,
+    title: 'Jofer',
+    author: '#React.js #Node.js #MongoDB',
+    featured: true,
+    gitHubLink: 'https://github.com/sequint/Jofer',
+    deployedSite: 'https://jofer.herokuapp.com',
+    description: `An app that allows users to create and manage projects that they are working on, while tracking other projects that they like.`
+  },
+  {
     img: pubImg,
     title: 'PUB',
     author: '#Node.js #FullStack',
-    featured: true,
     gitHubLink: 'https://github.com/sequint/pub',
     deployedSite: 'https://pure-brook-86019.herokuapp.com/',
     description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
@@ -24,16 +32,8 @@ const projects = [
     img: sessionImg,
     title: 'Session',
     author: '#API #VanillaJS',
-    gitHubLink: 'https://github.com/sequint/pub',
-    deployedSite: 'https://pure-brook-86019.herokuapp.com/',
-    description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
-  },
-  {
-    img: binaryTreeImg,
-    title: 'Binary Tree',
-    author: '#C++',
-    gitHubLink: 'https://github.com/sequint/pub',
-    deployedSite: 'https://pure-brook-86019.herokuapp.com/',
+    gitHubLink: 'https://github.com/sequint/session',
+    deployedSite: 'https://sequint.github.io/session/',
     description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
   }
 ]

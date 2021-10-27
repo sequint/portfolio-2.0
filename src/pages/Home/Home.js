@@ -4,7 +4,6 @@ import ClassTimeline from '../../components/ClassTimeline/ClassTimeline'
 import ContactMe from '../../components/ContactMe/ContactMe'
 import SkillList from '../../components/SkillList/SkillList'
 import ProjectList from '../../components/ProjectList/ProjectList'
-// import Landing from '../../components/Landing/Landing'
 
 const Home = () => {
   return(
@@ -15,7 +14,6 @@ const Home = () => {
       <SkillList />
       <ProjectList />
       <ContactMe />
-      {/* <Landing /> */}
     </>
   )
 }
