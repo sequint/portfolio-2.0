@@ -75,10 +75,20 @@
   .headshot {
     height: 350px;
     margin-top: 300px;
-    margin-left: auto;
+  }
+  .headLinksContainer {
+    margin-left: 0px;
     margin-right: 0px;
   }
-  .siteLinksContainer {
-    margin-left: 240px !important;
+}
+
+@media screen and (min-width: 1400px) {
+  .headshot {
+    height: 350px;
+    margin-top: 300px;
+  }
+  .headLinksContainer {
+    margin-left: 300px;
+    margin-right: 0px;
   }
 }
