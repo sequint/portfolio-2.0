@@ -1,0 +1,11 @@
+.allProjectContainer {
+  height: 500px !important;
+  padding-bottom: 200px;
+}
+
+.allListContainer {
+  height: fit-content !important;
+  width: 900px !important;
+  margin: auto !important;
+  grid-template-columns: repeat(3, 2fr) !important;
+}
