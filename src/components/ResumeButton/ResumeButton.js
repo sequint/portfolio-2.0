@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import AttachFileIcon from '@mui/icons-material/AttachFile'
 import './ResumeButton.css'
 
@@ -34,7 +35,9 @@ const ResumeButton = () => {
 
   return(
     <>
-      <button className="resumeBtn" onClick={handleResumeClick}>{isXS ? <AttachFileIcon /> : 'Resume'}</button>
+      <Link to="/resume">
+        <button className="resumeBtn">{isXS ? <AttachFileIcon /> : 'Resume'}</button>
+      </Link>
     </>
   )
 }
