@@ -6,10 +6,12 @@
 .skillIcon {
   margin-top: 30px !important;
   color: #118AB2 !important;
+  box-shadow: none !important;
 }
 
 .skillItem {
   color: #118AB2 !important;
+  box-shadow: none !important;
 }
 
 .skillsContainer {
@@ -20,6 +22,7 @@
 
 .skillsDescriptionArea {
   background-color: #FFD166 !important;
+  box-shadow: none !important;
   text-align: center;
 }
 
