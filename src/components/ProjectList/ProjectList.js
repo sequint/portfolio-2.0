@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
@@ -39,40 +38,12 @@ const projects = [
 ]
 
 const ProjectList = () => {
-  const [ size, setSize ] = useState(window.innerWidth)
-  const [ isXS, setIsXS ] = useState(true)
-
-  const updateWidth = _ => {
-    setSize(window.innerWidth)
-  }
-
-  useEffect(() => {
-
-    window.addEventListener("resize", updateWidth)
-
-    if (size > 375) {
-      console.log('in large')
-      setIsXS(false)
-    }
-    else if (size <= 375){
-      console.log('in xs')
-      setIsXS(true)
-    }
-
-    return () => window.removeEventListener("resize", updateWidth)
-
-  }, [size])
-
-  const renderDynamicList = _ => {
-    if (isXS) {
-      console.log('xs screen')
-      return(
-        <ImageList
-          className="projects"
-          sx={{ width: 300, height: 600, margin: '20px auto 0px auto' }}
-          cols={1}
-        >
-          {projects.map((project) => (
+  return(
+    <div className="projectContainer">
+      <h1 className="projectsTitle">Project Highlights</h1>
+      <ImageList ImageList className="imgListContainer" cols={1} >
+        {
+          projects.map(project => (
             <ImageListItem key={project.img}>
               <img
                 src={`${project.img}?w=248&fit=crop&auto=format`}
@@ -85,10 +56,11 @@ const ProjectList = () => {
                 subtitle={project.author}
                 actionIcon={
                   <IconButton
+                    className="linkIcon"
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${project.title}`}
                   >
-                    <a className="noDecor" href={project.deployedSite} target="_blank" rel="noreferrer">
+                    <a className="noDecor linkIcon" href={project.deployedSite} target="_blank" rel="noreferrer">
                       <LanguageIcon className="linkIcon" sx={{ fill: 'white' }} />
                     </a>
                     <a className="noDecor" href={project.gitHubLink} target="_blank" rel="noreferrer">
@@ -98,53 +70,9 @@ const ProjectList = () => {
                 }
               />
             </ImageListItem>
-          ))}
-        </ImageList>
-      )
-    }
-    else {
-      console.log('bigger screen')
-      return(
-        <ImageList ImageList className="imgListContainer" >
-          {
-            projects.map(project => (
-              <ImageListItem key={project.img}>
-                <img
-                  src={`${project.img}?w=248&fit=crop&auto=format`}
-                  srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  alt={project.title}
-                  loading="lazy"
-                />
-                <ImageListItemBar
-                  title={project.title}
-                  subtitle={project.author}
-                  actionIcon={
-                    <IconButton
-                      className="linkIcon"
-                      sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                      aria-label={`info about ${project.title}`}
-                    >
-                      <a className="noDecor linkIcon" href={project.deployedSite} target="_blank" rel="noreferrer">
-                        <LanguageIcon className="linkIcon"  sx={{ fill: 'white' }} />
-                      </a>
-                      <a className="noDecor" href={project.gitHubLink} target="_blank" rel="noreferrer">
-                        <GitHubIcon className="linkIcon"  sx={{ fill: 'white' }} />
-                      </a>
-                    </IconButton>
-                  }
-                />
-              </ImageListItem>
-            ))
-          }
-        </ImageList >
-      )
-    }
-  }
-
-  return(
-    <div className="projectContainer">
-      <h1 className="projectsTitle">Project Highlights</h1>
-      {renderDynamicList()}
+          ))
+        }
+      </ImageList >
     </div>
   )
 }
