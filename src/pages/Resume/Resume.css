@@ -3,7 +3,6 @@
 }
 
 .resumePDF {
-  min-height: 100vh !important;
-  min-width: 100vw !important;
+  height: 100vh;
   margin-top: 70px !important;
 }
