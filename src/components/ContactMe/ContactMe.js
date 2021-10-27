@@ -75,7 +75,7 @@ const ContactMe = () => {
 
   return(
     <>
-      <Box sx={{ position: 'fixed', width: '100%', bottom: 0, float: 'right', padding: '0px 10px 10px 0px', transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <Box className="contactToggler">
         <Fab className="contactBtnColor" aria-label="add" onClick={handleClick}>
           <InsertComment />
         </Fab>

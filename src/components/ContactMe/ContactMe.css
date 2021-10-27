@@ -1,4 +1,4 @@
-.css-a8igs1-MuiButtonBase-root-MuiFab-root {
+.contactBtnColor {
   color: white !important;
   background-color: #05668D !important;
   float: right;
@@ -6,6 +6,16 @@
 
 .MuiTextField-root {
   width: 300px;
+}
+
+.contactToggler {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  float: right;
+  padding: 0px 10px 10px 0px;
+  transform: translate(0px);
+  flex-grow: 1;
 }
 
 .contactMeTitle {
