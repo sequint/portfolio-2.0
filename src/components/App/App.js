@@ -4,10 +4,10 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Projects from './pages/Projects/Projects'
-import Skills from './pages/Skills/Skills'
-import Resume from './pages/Resume/Resume'
+import Home from '../../pages/Home/Home'
+import Projects from '../../pages/Projects/Projects'
+import Skills from '../../pages/Skills/Skills'
+import Resume from '../../pages/Resume/Resume'
 import './App.css'
 
 const App = () => {
