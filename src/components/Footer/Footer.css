@@ -1,0 +1,48 @@
+.footerContainer {
+  background-color: #06D6A0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.footLinksTitle {
+  margin-bottom: 10px;
+}
+
+.footerCardStyle {
+  box-shadow: none !important;
+  background-color: #06D6A0 !important;
+}
+
+.footGithubIcon {
+  display: block !important;
+  margin: 0px -10px 10px auto !important;
+  height: 30px;
+}
+
+.footGithubIcon:hover {
+  cursor: pointer;
+}
+
+.footLinkedinIcon {
+  display: block !important;
+  margin: 0px auto 10px -10px !important;
+  height: 30px;
+}
+
+.footLinkedinIcon:hover {
+  cursor: pointer;
+}
+
+.copyrightArea {
+  display: inline-flex !important;
+  margin-top: 10px !important;
+}
+
+.copyrightIcon {
+  margin-right: 10px !important;
+}
+
+.copyrightText {
+  margin-top: 3px !important;
+}

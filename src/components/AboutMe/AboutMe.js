@@ -62,7 +62,7 @@ const AboutMe = () => {
             </Grid>
             <Grid item xs={6} onClick={handleLinkedInClick}>
               <Item className="deleteCardStyle">
-                              <svg
+                <svg
                 viewBox="0 0 1024 1024"
                 fill="currentColor"
                 height="50px"
