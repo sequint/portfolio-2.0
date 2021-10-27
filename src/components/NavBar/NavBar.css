@@ -1,16 +1,12 @@
-.css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+.navBgColor {
   background-color: #06D6A0 !important;
 }
 
-.css-jzk4qw-MuiPaper-root-MuiAppBar-root {
-  background-color: #06D6A0 !important;
-}
-
-.css-8u39c-MuiTypography-root {
+.logoMargins {
   margin: auto !important;
 }
 
-.css-1t29gy6-MuiToolbar-root {
+.toolbarPadding {
   padding-right: 20px !important;
 }
 

@@ -102,7 +102,7 @@ const NavBar = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar className="navBgColor" position="fixed" open={open}>
-        <Toolbar>
+        <Toolbar className="toolbarPadding">
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -112,7 +112,7 @@ const NavBar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography className="logoMargins" variant="h6" noWrap component="div">
             <img 
               src={logo}
               alt="Site logo"

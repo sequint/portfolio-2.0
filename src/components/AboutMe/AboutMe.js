@@ -36,7 +36,7 @@ const AboutMe = () => {
         columnSpacing={{xs: 1, sm: 30}}
       >
         <Grid item xs={12} sm={6}>
-          <Item>
+          <Item className="deleteCardStyle">
             <img src={headshot} className="headshot" alt="headshot" />
             <Grid
               container
@@ -48,7 +48,7 @@ const AboutMe = () => {
               className="siteLinksContainer"
             >
             <Grid item xs={6} onClick={handleGitHubClick}>
-              <Item>
+              <Item className="deleteCardStyle">
                 <svg
                 viewBox="0 0 1024 1024"
                 fill="currentColor"
@@ -61,7 +61,7 @@ const AboutMe = () => {
               </Item>
             </Grid>
             <Grid item xs={6} onClick={handleLinkedInClick}>
-              <Item>
+              <Item className="deleteCardStyle">
                               <svg
                 viewBox="0 0 1024 1024"
                 fill="currentColor"
@@ -77,7 +77,7 @@ const AboutMe = () => {
           </Item>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Item className="aboutMeArea">
+          <Item className="aboutMeArea deleteCardStyle">
             <h1 className="aboutMeTitle">About Me</h1>
             <p className="aboutMeText">{aboutMeText}</p>
             <p className="aboutMeText">{aboutMeContinued}</p>
