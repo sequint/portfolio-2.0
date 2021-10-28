@@ -201,7 +201,7 @@ const skills = [
 const AllSkills = () => {
   return(
     <div className="allSkillsContainer">
-      <PageTitle title="Toolbelt (All Skills)" />
+      <PageTitle title="Toolbelt" />
       <Box sx={{ width: '100%' }}>
         <Grid
           container
