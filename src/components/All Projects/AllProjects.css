@@ -4,8 +4,16 @@
 }
 
 .allListContainer {
-  height: fit-content !important;
-  width: 900px !important;
+  height: 600px !important;
+  width: 300px !important;
   margin: auto !important;
-  grid-template-columns: repeat(3, 2fr) !important;
+}
+
+@media screen and (min-width: 570px) {
+  .allListContainer {
+    height: 300px !important;
+    width: 900px !important;
+    margin: auto !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
 }

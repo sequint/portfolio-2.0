@@ -49,71 +49,11 @@ const projects = [
 ]
 
 const AllProjects = () => {
-  const [size, setSize] = useState(window.innerWidth)
-  const [isXS, setIsXS] = useState(true)
-
-  const updateWidth = _ => {
-    setSize(window.innerWidth)
-  }
-
-  useEffect(() => {
-
-    window.addEventListener("resize", updateWidth)
-
-    if (size > 375) {
-      console.log('in large')
-      setIsXS(false)
-    }
-    else if (size <= 375) {
-      console.log('in xs')
-      setIsXS(true)
-    }
-
-    return () => window.removeEventListener("resize", updateWidth)
-
-  }, [size])
-
-  const renderDynamicList = _ => {
-    if (isXS) {
-      return (
-        <ImageList
-          className="projects"
-          sx={{ width: 300, height: 600, margin: '20px auto 0px auto' }}
-          cols={1}
-        >
-          {projects.map((project) => (
-            <ImageListItem key={project.img}>
-              <img
-                src={`${project.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={project.title}
-                loading="lazy"
-              />
-              <ImageListItemBar
-                title={project.title}
-                subtitle={project.author}
-                actionIcon={
-                  <IconButton
-                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                    aria-label={`info about ${project.title}`}
-                  >
-                    <a className="noDecor" href={project.deployedSite} target="_blank" rel="noreferrer">
-                      <LanguageIcon className="linkIcon" sx={{ fill: 'white' }} />
-                    </a>
-                    <a className="noDecor" href={project.gitHubLink} target="_blank" rel="noreferrer">
-                      <GitHubIcon className="linkIcon" sx={{ fill: 'white' }} />
-                    </a>
-                  </IconButton>
-                }
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      )
-    }
-    else {
-      return (
-        <ImageList ImageList className="allListContainer" >
+  return(
+    <>
+      <PageTitle title="Projects" />
+      <div className="allProjectContainer">
+        <ImageList ImageList className="allListContainer" cols={1} >
           {
             projects.map(project => (
               <ImageListItem key={project.img}>
@@ -145,15 +85,6 @@ const AllProjects = () => {
             ))
           }
         </ImageList >
-      )
-    }
-  }
-
-  return(
-    <>
-      <PageTitle title="Projects" />
-      <div className="allProjectContainer">
-        {renderDynamicList()}
       </div>
     </>
   )
