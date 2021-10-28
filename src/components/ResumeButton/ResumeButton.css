@@ -15,3 +15,9 @@
   background-color: #FFD166;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .resumeBtn {
+    display: none;
+  }
+}

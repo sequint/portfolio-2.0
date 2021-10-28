@@ -2,3 +2,23 @@
   height: 100vh;
   margin-top: 70px !important;
 }
+
+.sadFace {
+  margin-top: 5px !important;
+  margin-left: -7px;
+  margin-right: -10px;
+  height: 337px;
+  width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .resumePDF {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sadFace {
+    display: none;
+  }
+}
