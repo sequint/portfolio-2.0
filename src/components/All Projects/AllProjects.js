@@ -30,20 +30,20 @@ const projects = [
     description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
   },
   {
-    img: sessionImg,
-    title: 'Session',
-    author: '#API #VanillaJS',
-    gitHubLink: 'https://github.com/sequint/session',
-    deployedSite: 'https://sequint.github.io/session/',
-    description: `An app for surfers to click one button and have custom surf sessions generated for them based on their preferences of waves and food to eat out after.`
-  },
-  {
     img: binTreeImg,
     title: 'C++ Binary Tree',
     author: '#C++ #search #memory-allocation',
     gitHubLink: 'https://github.com/sequint/int-binary-tree',
     deployedSite: 'https://github.com/sequint/int-binary-tree',
     description: `C++ console app that can add/delete numbers from a binary tree, get leaf numbers on the tree, and return the trees height or width.`
+  },
+  {
+    img: sessionImg,
+    title: 'Session',
+    author: '#API #VanillaJS',
+    gitHubLink: 'https://github.com/sequint/session',
+    deployedSite: 'https://sequint.github.io/session/',
+    description: `An app for surfers to click one button and have custom surf sessions generated for them based on their preferences of waves and food to eat out after.`
   }
 ]
 

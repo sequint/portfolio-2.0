@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LanguageIcon from '@mui/icons-material/Language'
 import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import pubImg from '../../images/project-screenshots/PUB-icon.png'
-import sessionImg from '../../images/project-screenshots/session-icon.png'
+import binTreeImg from '../../images/project-screenshots/binary-tree-icon.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import './ProjectList.css'
 
@@ -29,12 +29,12 @@ const projects = [
     description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
   },
   {
-    img: sessionImg,
-    title: 'Session',
-    author: '#API #VanillaJS',
-    gitHubLink: 'https://github.com/sequint/session',
-    deployedSite: 'https://sequint.github.io/session/',
-    description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
+    img: binTreeImg,
+    title: 'C++ Binary Tree',
+    author: '#C++ #search #memory-allocation',
+    gitHubLink: 'https://github.com/sequint/int-binary-tree',
+    deployedSite: 'https://github.com/sequint/int-binary-tree',
+    description: `C++ console app that can add/delete numbers from a binary tree, get leaf numbers on the tree, and return the trees height or width.`
   }
 ]
 
