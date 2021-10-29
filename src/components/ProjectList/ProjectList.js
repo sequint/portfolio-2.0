@@ -53,7 +53,9 @@ const ProjectList = () => {
                 srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={project.title}
                 loading="lazy"
+                className="projImg"
               />
+              <ImageListItemBar className="descArea" title={project.description}></ImageListItemBar>
               <ImageListItemBar
                 title={project.title}
                 subtitle={project.author}
