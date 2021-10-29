@@ -40,7 +40,11 @@ const projects = [
 ]
 
 const ProjectList = () => {
-  const [ hover, setHover ] = useState(false)
+  const [ hover, setHover ] = useState({
+    0: false,
+    1: false,
+    2: false
+  })
 
   return(
     <div className="projectContainer">
@@ -48,11 +52,11 @@ const ProjectList = () => {
       <SeeMoreBtn path="projects" />
       <ImageList ImageList className="imgListContainer" cols={1} >
         {
-          projects.map(project => (
+          projects.map((project, index) => (
             <ImageListItem
               key={project.img}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
+              onMouseEnter={() => setHover({ ...hover, [index]: true })}
+              onMouseLeave={() => setHover({ ...hover, [index]: false })}
             >
               <img
                 src={`${project.img}?w=248&fit=crop&auto=format`}
@@ -61,7 +65,7 @@ const ProjectList = () => {
                 loading="lazy"
                 className="projImg"
               />
-              {hover ? <ImageListItemBar className="descArea" title={project.description}></ImageListItemBar> : <></>}
+              {hover[index] ? <ImageListItemBar className="descArea" title={project.description}></ImageListItemBar> : <></>}
               <ImageListItemBar
                 title={project.title}
                 subtitle={project.author}
