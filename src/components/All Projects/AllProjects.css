@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 570px) {
   .allListContainer {
-    height: 300px !important;
+    height: 115% !important;
     width: 900px !important;
     margin: auto !important;
     grid-template-columns: repeat(3, 1fr) !important;
