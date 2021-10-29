@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
@@ -39,6 +40,7 @@ const projects = [
 ]
 
 const ProjectList = () => {
+  const [ hover, setHover ] = useState(false)
 
   return(
     <div className="projectContainer">
@@ -47,7 +49,11 @@ const ProjectList = () => {
       <ImageList ImageList className="imgListContainer" cols={1} >
         {
           projects.map(project => (
-            <ImageListItem key={project.img}>
+            <ImageListItem
+              key={project.img}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+            >
               <img
                 src={`${project.img}?w=248&fit=crop&auto=format`}
                 srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -55,7 +61,7 @@ const ProjectList = () => {
                 loading="lazy"
                 className="projImg"
               />
-              <ImageListItemBar className="descArea" title={project.description}></ImageListItemBar>
+              {hover ? <ImageListItemBar className="descArea" title={project.description}></ImageListItemBar> : <></>}
               <ImageListItemBar
                 title={project.title}
                 subtitle={project.author}
