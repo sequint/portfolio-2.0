@@ -4,6 +4,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar'
 import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LanguageIcon from '@mui/icons-material/Language'
+import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import pubImg from '../../images/project-screenshots/PUB-icon.png'
 import sessionImg from '../../images/project-screenshots/session-icon.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
@@ -41,6 +42,7 @@ const ProjectList = () => {
   return(
     <div className="projectContainer">
       <h1 className="projectsTitle">Project Highlights</h1>
+      <SeeMoreBtn path="projects" />
       <ImageList ImageList className="imgListContainer" cols={1} >
         {
           projects.map(project => (

@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles'
 import Grid from '@mui/material/Grid'
 import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
+import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import './SkillList.css'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -201,6 +202,7 @@ const SkillList = () => {
                   )
                 })}
               </Grid>
+              <SeeMoreBtn path="toolbelt" />
             </Box>
           </Grid>
         </Grid>
