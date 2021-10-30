@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
@@ -19,7 +20,7 @@ const projects = [
     featured: true,
     gitHubLink: 'https://github.com/sequint/Jofer',
     deployedSite: 'https://jofer.herokuapp.com',
-    description: `An app that allows users to create and manage projects that they are working on, while tracking other projects that they like.`
+    description: `A full MERN Stack application geared toward helping employers and HR departments give their applicants the best application experience possible, while streamlining communication during the hiring process.`
   },
   {
     img: pubImg,
@@ -48,20 +49,32 @@ const projects = [
 ]
 
 const AllProjects = () => {
+  const [hover, setHover] = useState({
+    0: false,
+    1: false,
+    2: false
+  })
+
   return(
     <>
       <PageTitle title="Projects" />
       <div className="allProjectContainer">
         <ImageList ImageList className="allListContainer" cols={1} >
           {
-            projects.map(project => (
-              <ImageListItem key={project.img}>
+            projects.map((project, index) => (
+              <ImageListItem
+                key={project.img}
+                onMouseEnter={() => setHover({ ...hover, [index]: true })}
+                onMouseLeave={() => setHover({ ...hover, [index]: false })}
+              >
                 <img
                   src={`${project.img}?w=248&fit=crop&auto=format`}
                   srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                   alt={project.title}
                   loading="lazy"
+                  className="allProjImg"
                 />
+                {hover[index] ? <ImageListItemBar className="allProjDescArea" title={project.description}></ImageListItemBar> : <></>}
                 <ImageListItemBar
                   title={project.title}
                   subtitle={project.author}

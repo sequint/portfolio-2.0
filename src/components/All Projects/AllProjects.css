@@ -9,11 +9,31 @@
   margin: auto !important;
 }
 
+.allProjImg {
+  height: 300px !important;
+}
+
+.allProjDescArea {
+  margin-bottom: 60px;
+  height: 240px;
+  overflow: visible !important;
+  word-wrap: break-word !important;
+}
+
+.MuiImageListItemBar-title {
+  overflow: visible !important;
+  white-space: pre-wrap !important;
+}
+
 @media screen and (min-width: 570px) {
   .allListContainer {
     height: 115% !important;
     width: 900px !important;
     margin: auto !important;
     grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .allProjDescArea {
+    margin-bottom: 60px;
+    height: 240px;
   }
 }

@@ -19,7 +19,7 @@ const projects = [
     featured: true,
     gitHubLink: 'https://github.com/sequint/Jofer',
     deployedSite: 'https://jofer.herokuapp.com',
-    description: `An app that allows users to create and manage projects that they are working on, while tracking other projects that they like.`
+    description: `A full MERN Stack application geared toward helping employers and HR departments give their applicants the best application experience possible, while streamlining communication during the hiring process.`
   },
   {
     img: pubImg,
@@ -27,7 +27,7 @@ const projects = [
     author: '#Node.js #FullStack',
     gitHubLink: 'https://github.com/sequint/pub',
     deployedSite: 'https://pure-brook-86019.herokuapp.com/',
-    description: `Stands for 'Project Hub'. This app allow you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
+    description: `Stands for 'Project Hub'. This app allows you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
   },
   {
     img: binTreeImg,
