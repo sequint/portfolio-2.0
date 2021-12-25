@@ -39,6 +39,10 @@ const AboutMe = () => {
           <Item className="deleteCardStyle">
             <div className="headLinksContainer">
               <img src={headshot} className="headshot" alt="headshot" />
+              <div className="employmentTitle">
+                <h1>Jr. Front End Engineer</h1>
+                <h2>InvestCloud, Inc.</h2>
+              </div>
               <Grid
                 container
                 direction="row"
