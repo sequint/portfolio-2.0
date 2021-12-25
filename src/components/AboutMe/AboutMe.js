@@ -88,7 +88,7 @@ const AboutMe = () => {
             <p className="aboutMeText">{aboutMeText}</p>
             <p className="aboutMeText">{aboutMeContinued}</p>
             <div>
-              <h2>Interests</h2>
+              <h2 className="interestTitle">Interests</h2>
               <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
