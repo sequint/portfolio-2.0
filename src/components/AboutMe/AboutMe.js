@@ -87,6 +87,31 @@ const AboutMe = () => {
             <h1 className="aboutMeTitle">About Me</h1>
             <p className="aboutMeText">{aboutMeText}</p>
             <p className="aboutMeText">{aboutMeContinued}</p>
+            <div>
+              <h2>Interests</h2>
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                height="30px"
+                width="30px"
+              >
+                <path d="M20.59 12l-3.3-3.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 01-1.42 1.4l-4-4a1 1 0 010-1.4l4-4A1 1 0 016.7 8.7L3.4 12zm7.56 8.24a1 1 0 01-1.94-.48l4-16a1 1 0 111.94.48l-4 16z" />
+              </svg>
+              <h3 className="interestName">Front End Engineering</h3>
+              <br />
+              <svg
+                fill="none"
+                viewBox="0 0 15 15"
+                height="30px"
+                width="30px"
+              >
+                <path
+                  stroke="currentColor"
+                  d="M12.5 8v-.167c0-.736-.597-1.333-1.333-1.333H10a1.5 1.5 0 100 3h1a1.5 1.5 0 010 3h-1A1.5 1.5 0 018.5 11m-2-5v5a1.5 1.5 0 01-3 0M.5.5h14v14H.5V.5z"
+                />
+              </svg>
+              <h3 className="interestName">React/Angular Development</h3>
+            </div>
           </Item>
         </Grid>
       </Grid>
