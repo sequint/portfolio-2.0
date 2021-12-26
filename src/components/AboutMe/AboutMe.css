@@ -79,6 +79,7 @@
   display: inline-flex;
   margin-left: 20px;
   padding-bottom: 10px;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 570px) {
