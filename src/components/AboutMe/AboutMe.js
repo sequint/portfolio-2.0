@@ -87,31 +87,66 @@ const AboutMe = () => {
             <h1 className="aboutMeTitle">About Me</h1>
             <p className="aboutMeText">{aboutMeText}</p>
             <p className="aboutMeText">{aboutMeContinued}</p>
-            <div>
-              <h2 className="interestTitle">Interests</h2>
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                height="30px"
-                width="30px"
-              >
-                <path d="M20.59 12l-3.3-3.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 01-1.42 1.4l-4-4a1 1 0 010-1.4l4-4A1 1 0 016.7 8.7L3.4 12zm7.56 8.24a1 1 0 01-1.94-.48l4-16a1 1 0 111.94.48l-4 16z" />
-              </svg>
-              <h3 className="interestName">Front End Engineering</h3>
-              <br />
-              <svg
-                fill="none"
-                viewBox="0 0 15 15"
-                height="30px"
-                width="30px"
-              >
-                <path
-                  stroke="currentColor"
-                  d="M12.5 8v-.167c0-.736-.597-1.333-1.333-1.333H10a1.5 1.5 0 100 3h1a1.5 1.5 0 010 3h-1A1.5 1.5 0 018.5 11m-2-5v5a1.5 1.5 0 01-3 0M.5.5h14v14H.5V.5z"
-                />
-              </svg>
-              <h3 className="interestName">React/Angular Development</h3>
-            </div>
+            <Grid
+              container
+              direction="row"
+              justifyContent="space-evenly"
+              alignItems="left"
+              rowSpacing={1}
+              columnSpacing={{ xs: 0, sm: 0 }}
+            >
+              <Grid item xs={12} sm={6}>
+                <Item className="deleteCardStyle">
+                  <h2 className="interestTitle">Interests</h2>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    height="30px"
+                    width="30px"
+                  >
+                    <path d="M20.59 12l-3.3-3.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 01-1.42 1.4l-4-4a1 1 0 010-1.4l4-4A1 1 0 016.7 8.7L3.4 12zm7.56 8.24a1 1 0 01-1.94-.48l4-16a1 1 0 111.94.48l-4 16z" />
+                  </svg>
+                  <h3 className="interestName">Front End Engineering</h3>
+                  <br />
+                  <svg
+                    fill="none"
+                    viewBox="0 0 15 15"
+                    height="30px"
+                    width="30px"
+                  >
+                    <path
+                      stroke="currentColor"
+                      d="M12.5 8v-.167c0-.736-.597-1.333-1.333-1.333H10a1.5 1.5 0 100 3h1a1.5 1.5 0 010 3h-1A1.5 1.5 0 018.5 11m-2-5v5a1.5 1.5 0 01-3 0M.5.5h14v14H.5V.5z"
+                    />
+                  </svg>
+                  <h3 className="interestName">React/Angular Development</h3>
+                </Item>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Item className="deleteCardStyle educationWidth">
+                  <h2 className="interestTitle">Education</h2>
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    height="30px"
+                    width="30px"
+                  >
+                    <path d="M3.33 8L10 12l10-6-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3-2-1.2v-6l7 4.2 7-4.2v6L10 20z" />
+                  </svg>
+                  <h3 className="interestName">Certificate - Full Stack Development</h3>
+                  <br />
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    height="30px"
+                    width="30px"
+                  >
+                    <path d="M3.33 8L10 12l10-6-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3-2-1.2v-6l7 4.2 7-4.2v6L10 20z" />
+                  </svg>
+                  <h3 className="interestName">B.S. - Business & Philosophy</h3>
+                </Item>
+              </Grid>
+            </Grid>
           </Item>
         </Grid>
       </Grid>

@@ -82,6 +82,10 @@
   vertical-align: middle;
 }
 
+.educationWidth {
+  width: 340px !important;
+}
+
 @media screen and (min-width: 570px) {
   .aboutMeArea {
     max-width: 600px !important;
