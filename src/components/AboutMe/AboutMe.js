@@ -10,9 +10,7 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2
 }))
 
-const aboutMeText = `Hi, my name is Steven.  I have been coding since 2013 when I took my first C++ class, and have been learning different tech on my own ever since.  I am a recent graduate of UC Irvine's Full Stack Development Bootcamp focused on the Mern Stack, where I was team lead on all three projects leading weekly sprints which culminated into a final project.`
-
-const aboutMeContinued = `Prior to diving into Software Development full time I was in the finance industry where I saw an immediate need to re-invent the way we approach business with technology.  My passion lies in making outdated process new, clean, and effeciant with modern tools and technologies.`
+const aboutMeText = `Full Stack Software Engineer with a background leading teams and managing client portfolios in commercial banking. Track record of meeting and exceeding goals in changing and fast paste environments, quickly learning new technologies to fit business needs. Excellent communication and organization skills, used to bring new ideas to the table to benefit technical and operational goals.`
 
 const handleGitHubClick = event => {
   event.preventDefault()
@@ -40,8 +38,8 @@ const AboutMe = () => {
             <div className="headLinksContainer">
               <img src={headshot} className="headshot" alt="headshot" />
               <div className="employmentTitle">
-                <h1>Jr. Front End Engineer</h1>
-                <h2>InvestCloud, Inc.</h2>
+                <h1>Software Engineer</h1>
+                <h2>Orange County Fire Authority</h2>
               </div>
               <Grid
                 container
@@ -86,7 +84,6 @@ const AboutMe = () => {
           <Item className="aboutMeArea deleteCardStyle">
             <h1 className="aboutMeTitle">About Me</h1>
             <p className="aboutMeText">{aboutMeText}</p>
-            <p className="aboutMeText">{aboutMeContinued}</p>
             <Grid
               container
               direction="row"
@@ -143,7 +140,7 @@ const AboutMe = () => {
                   >
                     <path d="M3.33 8L10 12l10-6-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3-2-1.2v-6l7 4.2 7-4.2v6L10 20z" />
                   </svg>
-                  <h3 className="interestName">B.S. - Business & Philosophy</h3>
+                  <h3 className="interestName">B.S. - Business & Programming</h3>
                 </Item>
               </Grid>
             </Grid>
